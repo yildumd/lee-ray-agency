@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lee and Ray Agency | Services</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚙️%3C/text%3E%3C/svg%3E">
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar" id="mainNav">
     <div class="container nav-container">
-      <div class="logo"><h2>Lee and Ray <span>Agency</span></h2></div>
+      <div class="logo">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230A66C2'/%3E%3Ctext x='50' y='70' font-size='50' text-anchor='middle' fill='white' font-weight='bold'%3EL%3C/text%3E%3C/svg%3E" alt="Lee and Ray Logo" class="logo-img">
+        <h2>Lee and Ray <span>Agency</span></h2>
+      </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" id="nav-home">Home</a></li>
         <li><a href="services.html" id="nav-services">Services</a></li>
@@ -28,35 +32,71 @@
     </section>
 
     <div class="container reveal">
-      <div class="services-grid" style="display: flex; flex-direction: column; gap: 48px;">
+      <div class="services-list">
         <!-- Recruitment -->
-        <div class="service-card" style="text-align: left; display: flex; flex-wrap: wrap; gap: 24px; align-items: center;">
-          <div class="service-icon" style="font-size: 3rem; min-width: 80px;"><i class="fas fa-users"></i></div>
-          <div style="flex:1"><h3>Recruitment Services</h3><p>End-to-end permanent and contract recruitment across all sectors. We source, vet, and present only the top 5% of candidates.</p><ul style="margin:16px 0 0 20px;"><li>✅ Direct sourcing & executive search</li><li>✅ Mass recruitment for projects</li><li>✅ Background & reference checks</li></ul><a href="https://wa.me/2348148138784?text=I%20need%20Recruitment%20services" class="btn btn-primary" style="margin-top: 20px; display: inline-flex;" target="_blank"><i class="fab fa-whatsapp"></i> Get recruitment support</a></div>
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1568992688065-536aad8a2f29?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Recruitment" class="service-item-img">
+          <div class="service-item-content">
+            <h3>Recruitment Services</h3>
+            <p>End-to-end permanent and contract recruitment across all sectors. We source, vet, and present only the top 5% of candidates.</p>
+            <ul class="professional-list">
+              <li>Direct sourcing & executive search</li>
+              <li>Mass recruitment for projects</li>
+              <li>Background & reference checks</li>
+            </ul>
+            <a href="https://wa.me/2348148138784?text=I%20need%20Recruitment%20services" class="text-link" target="_blank"><i class="fab fa-whatsapp"></i> Get recruitment support →</a>
+          </div>
         </div>
-
         <!-- Outsourcing -->
-        <div class="service-card" style="text-align: left; display: flex; flex-wrap: wrap; gap: 24px; align-items: center;">
-          <div class="service-icon" style="font-size: 3rem;"><i class="fas fa-chart-line"></i></div>
-          <div style="flex:1"><h3>Outsourcing Services</h3><p>Fully managed outsourced teams — we handle payroll, compliance, HR, and performance.</p><ul style="margin:16px 0 0 20px;"><li>✅ Reduce operational costs</li><li>✅ Scale teams flexibly</li><li>✅ 24/7 support & supervision</li></ul><a href="https://wa.me/2348148138784?text=Outsourcing%20inquiry" class="btn btn-primary" style="margin-top: 20px;" target="_blank"><i class="fab fa-whatsapp"></i> Discuss outsourcing</a></div>
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Outsourcing" class="service-item-img">
+          <div class="service-item-content">
+            <h3>Outsourcing Services</h3>
+            <p>Fully managed outsourced teams — we handle payroll, compliance, HR, and performance.</p>
+            <ul class="professional-list">
+              <li>Reduce operational costs</li>
+              <li>Scale teams flexibly</li>
+              <li>24/7 support & supervision</li>
+            </ul>
+            <a href="https://wa.me/2348148138784?text=Outsourcing%20inquiry" class="text-link" target="_blank"><i class="fab fa-whatsapp"></i> Discuss outsourcing →</a>
+          </div>
         </div>
-
         <!-- Talent Management -->
-        <div class="service-card" style="text-align: left; display: flex; flex-wrap: wrap; gap: 24px; align-items: center;">
-          <div class="service-icon" style="font-size: 3rem;"><i class="fas fa-chalkboard-user"></i></div>
-          <div style="flex:1"><h3>Talent Management</h3><p>Retain and develop your best people with strategic HR interventions.</p><ul style="margin:16px 0 0 20px;"><li>✅ Performance management systems</li><li>✅ Career pathing & training</li><li>✅ Employee engagement & retention</li></ul><a href="https://wa.me/2348148138784?text=Talent%20Management%20request" class="btn btn-primary" style="margin-top: 20px;" target="_blank"><i class="fab fa-whatsapp"></i> Optimise your team</a></div>
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Talent Management" class="service-item-img">
+          <div class="service-item-content">
+            <h3>Talent Management</h3>
+            <p>Retain and develop your best people with strategic HR interventions.</p>
+            <ul class="professional-list">
+              <li>Performance management systems</li>
+              <li>Career pathing & training</li>
+              <li>Employee engagement & retention</li>
+            </ul>
+            <a href="https://wa.me/2348148138784?text=Talent%20Management%20request" class="text-link" target="_blank"><i class="fab fa-whatsapp"></i> Optimise your team →</a>
+          </div>
         </div>
-
-        <!-- Ghost Eye Service -->
-        <div class="service-card" style="text-align: left; display: flex; flex-wrap: wrap; gap: 24px; align-items: center;">
-          <div class="service-icon" style="font-size: 3rem;"><i class="fas fa-eye"></i></div>
-          <div style="flex:1"><h3>Ghost Eye Service</h3><p>A confidential, undercover evaluation of your staff’s integrity, service delivery, and operational gaps.</p><ul style="margin:16px 0 0 20px;"><li>✅ Mystery shopping & audits</li><li>✅ Identify internal fraud or negligence</li><li>✅ Actionable intelligence report</li></ul><a href="https://wa.me/2348148138784?text=Ghost%20Eye%20Service%20inquiry" class="btn btn-primary" style="margin-top: 20px;" target="_blank"><i class="fab fa-whatsapp"></i> Request Ghost Eye audit</a></div>
+        <!-- Ghost Eye -->
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ghost Eye" class="service-item-img">
+          <div class="service-item-content">
+            <h3>Ghost Eye Service</h3>
+            <p>A confidential, undercover evaluation of your staff's integrity, service delivery, and operational gaps.</p>
+            <ul class="professional-list">
+              <li>Mystery shopping & audits</li>
+              <li>Identify internal fraud or negligence</li>
+              <li>Actionable intelligence report</li>
+            </ul>
+            <a href="https://wa.me/2348148138784?text=Ghost%20Eye%20Service%20inquiry" class="text-link" target="_blank"><i class="fab fa-whatsapp"></i> Request Ghost Eye audit →</a>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="container reveal" style="margin-top: 40px;">
-      <div class="cta-banner"><h3>Ready to transform your workforce?</h3><a href="https://wa.me/2348148138784?text=I'd%20like%20to%20discuss%20a%20partnership" class="btn" style="background:white; color:black;" target="_blank"><i class="fab fa-whatsapp"></i> Talk to a specialist</a></div>
+      <div class="cta-banner">
+        <h3>Ready to transform your workforce?</h3>
+        <a href="https://wa.me/2348148138784?text=I'd%20like%20to%20discuss%20a%20partnership" class="text-link light" target="_blank"><i class="fab fa-whatsapp"></i> Talk to a specialist →</a>
+      </div>
     </div>
   </main>
 
@@ -71,7 +111,6 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/2348148138784?text=Hello%20I%20have%20a%20question" class="float-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
   <script src="script.js"></script>
 </body>
 </html>

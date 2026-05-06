@@ -1,13 +1,3 @@
-// Sticky header scroll effect
-const navbar = document.getElementById('mainNav');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
-
 // Hamburger menu toggle
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
@@ -18,7 +8,6 @@ if (hamburger) {
   });
 }
 
-// Close menu when clicking a link
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('active');
@@ -37,7 +26,7 @@ const observer = new IntersectionObserver((entries) => {
 
 revealElements.forEach(el => observer.observe(el));
 
-// Active nav link highlighting
+// Active nav link
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
 if (currentPage === "index.html") document.getElementById('nav-home')?.classList.add('active');
 if (currentPage === "services.html") document.getElementById('nav-services')?.classList.add('active');
