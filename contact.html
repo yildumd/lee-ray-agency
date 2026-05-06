@@ -14,8 +14,10 @@
   <nav class="navbar" id="mainNav">
     <div class="container nav-container">
       <div class="logo">
-        <img src="images/logo.png" alt="Lee & Ray Logo" class="logo-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%230A66C2\'/%3E%3Ctext x=\'50\' y=\'70\' font-size=\'50\' text-anchor=\'middle\' fill=\'white\' font-weight=\'bold\'%3EL%3C/text%3E%3C/svg%3E'">
-        <!-- Header text removed – only logo image remains -->
+        <!-- Clickable logo: wraps the image in a link to home page -->
+        <a href="index.html">
+          <img src="images/logo.png" alt="Lee & Ray Logo" class="logo-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%230A66C2\'/%3E%3Ctext x=\'50\' y=\'70\' font-size=\'50\' text-anchor=\'middle\' fill=\'white\' font-weight=\'bold\'%3EL%3C/text%3E%3C/svg%3E'">
+        </a>
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" id="nav-home">Home</a></li>
