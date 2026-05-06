@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Lee and Ray Agency | Home</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏢%3C/text%3E%3C/svg%3E">
+  <!-- Favicon (real .ico file) -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar - solid background -->
   <nav class="navbar" id="mainNav">
     <div class="container nav-container">
       <div class="logo">
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230A66C2'/%3E%3Ctext x='50' y='70' font-size='50' text-anchor='middle' fill='white' font-weight='bold'%3EL%3C/text%3E%3C/svg%3E" alt="Lee and Ray Logo" class="logo-img">
+        <!-- Real logo image -->
+        <img src="logo.png" alt="Lee and Ray Logo" class="logo-img">
         <h2>Lee and Ray <span>Agency</span></h2>
       </div>
       <ul class="nav-links" id="navLinks">
@@ -27,7 +28,6 @@
   </nav>
 
   <main>
-    <!-- Hero Section -->
     <section class="hero">
       <div class="container">
         <div class="hero-content reveal">
@@ -38,7 +38,6 @@
       </div>
     </section>
 
-    <!-- About Us -->
     <section class="container reveal">
       <h2 class="section-title">About Us</h2>
       <div class="about-content">
@@ -47,7 +46,6 @@
       </div>
     </section>
 
-    <!-- Testimonials Section (simple slider/cards) -->
     <section class="container reveal">
       <h2 class="section-title">What Our Clients Say</h2>
       <div class="testimonials-grid">
@@ -69,39 +67,15 @@
       </div>
     </section>
 
-    <!-- Social Media Plugins Section (placeholders – embed real feeds here) -->
-        <!-- Social Media Links - Updated -->
     <section class="container reveal">
       <h2 class="section-title">Connect With Us</h2>
-      <div class="social-grid">
-        <div class="social-placeholder">
-          <i class="fab fa-facebook fa-2x"></i>
-          <h3>Facebook</h3>
-          <p>Follow us for updates and industry insights.</p>
-          <a href="https://www.facebook.com/share/1B9zE62vd2/" class="text-link" target="_blank" rel="noopener noreferrer">
-            Visit our Page →
-          </a>
-        </div>
-        <div class="social-placeholder">
-          <i class="fab fa-instagram fa-2x"></i>
-          <h3>Instagram</h3>
-          <p>See our team and company culture in action.</p>
-          <a href="https://www.instagram.com/leerayagency" class="text-link" target="_blank" rel="noopener noreferrer">
-            Follow us →
-          </a>
-        </div>
-        <div class="social-placeholder">
-          <i class="fab fa-whatsapp fa-2x"></i>
-          <h3>WhatsApp Channel</h3>
-          <p>Join our channel for instant updates.</p>
-          <a href="https://whatsapp.com/channel/0029Vazezuy2ZjCoZ9tDdW3Q" class="text-link" target="_blank" rel="noopener noreferrer">
-            Join Channel →
-          </a>
-        </div>
+      <div class="social-icons-wrapper">
+        <a href="https://www.facebook.com/share/1B9zE62vd2/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/leerayagency" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="https://whatsapp.com/channel/0029Vazezuy2ZjCoZ9tDdW3Q" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
       </div>
     </section>
 
-    <!-- Final CTA (only text link) -->
     <div class="container reveal">
       <div class="cta-banner">
         <h3>Need reliable staff?</h3>
@@ -114,9 +88,23 @@
   <footer>
     <div class="container">
       <div class="footer-content">
-        <div class="footer-col"><h4>Lee and Ray Agency</h4><p>Premium recruitment & talent outsourcing.</p></div>
-        <div class="footer-col"><h4>Quick Links</h4><p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="contact.html">Contact</a></p></div>
-        <div class="footer-col"><h4>Connect</h4><p><i class="fab fa-whatsapp"></i> +234 814 813 8784<br><i class="far fa-envelope"></i> leeandrayconsult@gmail.com</p></div>
+        <div class="footer-col">
+          <h4>Lee and Ray Agency</h4>
+          <p>Premium recruitment & talent outsourcing.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-social-icons">
+            <a href="https://www.facebook.com/share/1B9zE62vd2/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/leerayagency" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://whatsapp.com/channel/0029Vazezuy2ZjCoZ9tDdW3Q" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <p><i class="fab fa-whatsapp"></i> +234 814 813 8784<br><i class="far fa-envelope"></i> leeandrayconsult@gmail.com</p>
+        </div>
       </div>
       <div class="footer-bottom"><p>© 2025 Lee and Ray Agency Limited — Trusted Talent Partner</p></div>
     </div>
