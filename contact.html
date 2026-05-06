@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lee and Ray Agency | Contact</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📞</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar" id="mainNav">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23D4AF37'/%3E%3Ctext x='50' y='70' font-size='50' text-anchor='middle' fill='black' font-weight='bold'%3EL%3C/text%3E%3C/svg%3E" alt="Logo" class="logo-img">
+        <h2>Lee and Ray <span>Agency</span></h2>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" id="nav-home">Home</a></li>
+        <li><a href="services.html" id="nav-services">Services</a></li>
+        <li><a href="contact.html" id="nav-contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://wa.me/2348148138784" class="header-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="container reveal">
+      <h1 class="section-title">Let’s Connect</h1>
+      <p class="section-sub">Reach out for recruitment needs, partnership inquiries, or any questions.</p>
+    </section>
+
+    <div class="container contact-grid reveal">
+      <div class="contact-info">
+        <h3 style="margin-bottom: 24px;">Contact Information</h3>
+        <div class="contact-info-item"><i class="fab fa-whatsapp"></i><div><strong>WhatsApp (Primary)</strong><br><a href="https://wa.me/2348148138784" target="_blank">+234 814 813 8784</a><br>Click to chat instantly</div></div>
+        <div class="contact-info-item"><i class="fas fa-phone-alt"></i><div><strong>Phone</strong><br>08148138784</div></div>
+        <div class="contact-info-item"><i class="far fa-envelope"></i><div><strong>Email</strong><br><a href="mailto:leeandrayconsult@gmail.com">leeandrayconsult@gmail.com</a></div></div>
+        <div class="contact-info-item"><i class="fas fa-building"></i><div><strong>Office</strong><br>Abuja, Nigeria (by appointment)</div></div>
+        <div class="contact-info-item" style="margin-top: 20px;"><a href="https://wa.me/2348148138784?text=Hello%20Lee%20and%20Ray%2C%20I%20need%20assistance" class="btn btn-whatsapp" style="width: 100%; justify-content: center;" target="_blank"><i class="fab fa-whatsapp"></i> Message us on WhatsApp</a></div>
+      </div>
+
+      <div>
+        <div class="contact-form">
+          <h3>Send a quick message</h3>
+          <form id="simpleContactForm">
+            <div class="form-group"><input type="text" id="name" placeholder="Your name" required></div>
+            <div class="form-group"><textarea rows="4" id="message" placeholder="How can we help you?" required></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fab fa-whatsapp"></i> Submit via WhatsApp</button>
+          </form>
+          <p style="margin-top: 16px; font-size: 0.85rem;">*Your message will be sent to our WhatsApp for fast response.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container reveal">
+      <div style="background: var(--gray-light); padding: 32px; border-radius: 28px; text-align: center; margin: 40px 0;">
+        <h3>Lee and Ray Agency Limited</h3>
+        <p>We help businesses find, hire, and retain outstanding talent. Whether you need one employee or an entire outsourced team, we deliver excellence with speed and integrity.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col"><h4>Lee and Ray Agency</h4><p>Premium recruitment & talent outsourcing.</p></div>
+        <div class="footer-col"><h4>Quick Links</h4><p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="contact.html">Contact</a></p></div>
+        <div class="footer-col"><h4>Connect</h4><p><i class="fab fa-whatsapp"></i> +234 814 813 8784<br><i class="far fa-envelope"></i> leeandrayconsult@gmail.com</p></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Lee and Ray Agency Limited</p></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348148138784?text=Hello%20Lee%20and%20Ray%20Agency" class="float-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <script>
+    const form = document.getElementById('simpleContactForm');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const msg = document.getElementById('message').value.trim();
+        if (!name || !msg) return alert('Please fill both fields.');
+        const waNumber = '2348148138784';
+        const text = `Hello Lee and Ray Agency, my name is ${encodeURIComponent(name)}. Message: ${encodeURIComponent(msg)}`;
+        window.open(`https://wa.me/${waNumber}?text=${text}`, '_blank');
+      });
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
