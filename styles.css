@@ -488,3 +488,15 @@ footer {
   left: 0;
   font-weight: 600;
 }
+/* Ensure logo has no white background box */
+.logo-img {
+  background: transparent;
+  object-fit: contain;
+}
+/* Ensure nav links are tappable and not blocked */
+.nav-links a {
+  display: block;
+  padding: 12px 0;
+  pointer-events: auto;
+  touch-action: manipulation;
+}
