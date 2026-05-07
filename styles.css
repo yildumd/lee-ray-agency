@@ -10,7 +10,7 @@ body {
   color: #111111;
   line-height: 1.5;
   scroll-behavior: smooth;
-  padding-top: 70px;  /* adjusted for smaller navbar */
+  padding-top: 74px;   /* space for thinner header */
 }
 
 h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
@@ -55,10 +55,10 @@ h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
   color: var(--blue);
 }
 
-/* Navbar – new colour to blend with logo, slightly smaller */
+/* Navbar – lighter background, thinner */
 .navbar {
-  background: #0b1a2e;   /* deep navy – blends with dark logos */
-  padding: 12px 0;        /* reduced from 16px to make header less large */
+  background: #f8f9fa;   /* light gray – lets dark blue logo stand out */
+  padding: 8px 0;         /* thinner header */
   position: fixed;
   top: 0;
   left: 0;
@@ -77,7 +77,7 @@ h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
   gap: 10px;
 }
 .logo-img {
-  height: 36px;          /* slightly smaller to match new header height */
+  height: 32px;          /* smaller logo to match thinner header */
   width: auto;
   background: transparent;
   object-fit: contain;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.3px;
-  background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+  background: linear-gradient(135deg, #0b1a2e 0%, #0A66C2 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -102,7 +102,7 @@ h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
 .nav-links a {
   text-decoration: none;
   font-weight: 600;
-  color: #ffffff;
+  color: #111111;        /* dark text on light header */
   transition: var(--transition);
   position: relative;
   padding-bottom: 4px;
@@ -125,7 +125,7 @@ h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: white;
+  color: #111111;        /* dark hamburger icon */
 }
 
 /* Hero */
@@ -451,19 +451,19 @@ footer {
 /* Responsive */
 @media (max-width: 880px) {
   body {
-    padding-top: 62px;   /* match new navbar height on mobile */
+    padding-top: 66px;   /* adjusted for thinner header on mobile */
   }
   .container {
     padding: 0 24px;
   }
   .nav-links {
     position: fixed;
-    top: 62px;           /* adjusted */
+    top: 66px;
     left: -100%;
     flex-direction: column;
-    background: #0b1a2e; /* same as navbar */
+    background: #f8f9fa;  /* light background to match header */
     width: 80%;
-    height: calc(100vh - 62px);
+    height: calc(100vh - 66px);
     padding: 40px 32px;
     transition: 0.3s;
     gap: 28px;
@@ -483,6 +483,7 @@ footer {
     padding: 12px 0;
     pointer-events: auto;
     touch-action: manipulation;
+    color: #111111;      /* dark text on light mobile menu */
   }
   .hero h1 {
     font-size: 2rem;
