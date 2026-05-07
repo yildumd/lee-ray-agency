@@ -6,11 +6,11 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #ffffff;   /* white background */
-  color: #111111;        /* dark grey/black text */
+  background: #ffffff;
+  color: #111111;
   line-height: 1.5;
   scroll-behavior: smooth;
-  padding-top: 80px;
+  padding-top: 70px;  /* adjusted for smaller navbar */
 }
 
 h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
@@ -18,11 +18,11 @@ h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
 }
 
 :root {
-  --black: #ffffff;      /* now used for navbar background? we'll keep navbar dark? Actually navbar should stay dark for contrast – but user might want white navbar? We'll keep navbar dark as before but adjust text colors. */
-  --white: #111111;      /* used for text on dark backgrounds */
+  --black: #ffffff;
+  --white: #111111;
   --blue: #0A66C2;
   --blue-dark: #084a8f;
-  --gray-light: #f8f9fa; /* light grey for cards */
+  --gray-light: #f8f9fa;
   --gray-mid: #e9ecef;
   --transition: all 0.3s ease;
 }
@@ -33,7 +33,7 @@ h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
   padding: 0 32px;
 }
 
-/* Text links (no buttons) */
+/* Text links */
 .text-link {
   color: var(--blue);
   text-decoration: none;
@@ -45,20 +45,20 @@ h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
   font-size: 1rem;
 }
 .text-link:hover {
-  color: #000000;        /* darker on hover */
+  color: #000000;
   gap: 12px;
 }
 .text-link.light {
-  color: #111111;        /* for light backgrounds, now dark */
+  color: #111111;
 }
 .text-link.light:hover {
   color: var(--blue);
 }
 
-/* Navbar – always solid (keep dark for contrast) */
+/* Navbar – new colour to blend with logo, slightly smaller */
 .navbar {
-  background: #111111;   /* dark navbar to stand out on white */
-  padding: 16px 0;
+  background: #0b1a2e;   /* deep navy – blends with dark logos */
+  padding: 12px 0;        /* reduced from 16px to make header less large */
   position: fixed;
   top: 0;
   left: 0;
@@ -77,8 +77,10 @@ h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
   gap: 10px;
 }
 .logo-img {
-  height: 40px;
+  height: 36px;          /* slightly smaller to match new header height */
   width: auto;
+  background: transparent;
+  object-fit: contain;
 }
 .logo h2 {
   font-size: 1.5rem;
@@ -100,7 +102,7 @@ h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
 .nav-links a {
   text-decoration: none;
   font-weight: 600;
-  color: #ffffff;        /* white text on dark navbar */
+  color: #ffffff;
   transition: var(--transition);
   position: relative;
   padding-bottom: 4px;
@@ -126,7 +128,7 @@ h1, h2, h3, h4, .logo, .nav-links a, .stat-number, .text-link {
   color: white;
 }
 
-/* Hero – lighter overlay to make image visible, text now dark */
+/* Hero */
 .hero {
   background: linear-gradient(135deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.9) 100%), url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
   background-size: cover;
@@ -214,7 +216,7 @@ section {
   font-weight: 600;
 }
 
-/* Social links styling */
+/* Social icons */
 .social-icons-wrapper {
   display: flex;
   justify-content: center;
@@ -426,50 +428,7 @@ footer {
   transform: translateY(0);
 }
 
-/* Responsive */
-@media (max-width: 880px) {
-  body {
-    padding-top: 70px;
-  }
-  .container {
-    padding: 0 24px;
-  }
-  .nav-links {
-    position: fixed;
-    top: 70px;
-    left: -100%;
-    flex-direction: column;
-    background: #111111;
-    width: 80%;
-    height: calc(100vh - 70px);
-    padding: 40px 32px;
-    transition: 0.3s;
-    gap: 28px;
-    z-index: 999;
-    border-right: 1px solid var(--gray-mid);
-  }
-  .nav-links.active {
-    left: 0;
-  }
-  .hamburger {
-    display: block;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .section-title {
-    font-size: 1.8rem;
-  }
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-  .service-item-img {
-    width: 100%;
-    height: 200px;
-  }
-}
-
-/* Professional list styling (no emojis, clean bullets) */
+/* Professional list styling */
 .professional-list {
   list-style: none;
   margin: 20px 0;
@@ -488,15 +447,54 @@ footer {
   left: 0;
   font-weight: 600;
 }
-/* Ensure logo has no white background box */
-.logo-img {
-  background: transparent;
-  object-fit: contain;
-}
-/* Ensure nav links are tappable and not blocked */
-.nav-links a {
-  display: block;
-  padding: 12px 0;
-  pointer-events: auto;
-  touch-action: manipulation;
+
+/* Responsive */
+@media (max-width: 880px) {
+  body {
+    padding-top: 62px;   /* match new navbar height on mobile */
+  }
+  .container {
+    padding: 0 24px;
+  }
+  .nav-links {
+    position: fixed;
+    top: 62px;           /* adjusted */
+    left: -100%;
+    flex-direction: column;
+    background: #0b1a2e; /* same as navbar */
+    width: 80%;
+    height: calc(100vh - 62px);
+    padding: 40px 32px;
+    transition: 0.3s;
+    gap: 28px;
+    z-index: 999;
+    border-right: 1px solid var(--gray-mid);
+  }
+  .nav-links.active {
+    left: 0;
+  }
+  .hamburger {
+    display: block;
+    padding: 10px;
+    touch-action: manipulation;
+  }
+  .nav-links a {
+    display: block;
+    padding: 12px 0;
+    pointer-events: auto;
+    touch-action: manipulation;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-item-img {
+    width: 100%;
+    height: 200px;
+  }
 }
