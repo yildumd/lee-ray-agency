@@ -216,7 +216,7 @@ section {
   font-weight: 600;
 }
 
-/* Social icons */
+/* Social icons (only used in footer now, but kept for compatibility) */
 .social-icons-wrapper {
   display: flex;
   justify-content: center;
@@ -497,5 +497,58 @@ footer {
   .service-item-img {
     width: 100%;
     height: 200px;
+  }
+}
+
+/* ===== NEW TALENT POOL SECTION STYLES (added) ===== */
+.talent-pool-wrapper {
+  text-align: center;
+  background: var(--gray-light);
+  border-radius: 32px;
+  padding: 60px 40px;
+  margin: 40px 0;
+  border: 1px solid var(--gray-mid);
+}
+.talent-pool-number {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--blue);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.talent-pool-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111111;
+}
+.talent-pool-description {
+  font-size: 1.1rem;
+  color: #333333;
+  margin-bottom: 24px;
+}
+.talent-pool-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+.placeholder-note {
+  font-size: 0.7rem;
+  color: #888;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+/* Responsive adjustments for talent pool on mobile */
+@media (max-width: 768px) {
+  .talent-pool-number {
+    font-size: 3rem;
+  }
+  .talent-pool-title {
+    font-size: 1.5rem;
+  }
+  .talent-pool-wrapper {
+    padding: 40px 24px;
   }
 }
