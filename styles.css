@@ -552,3 +552,40 @@ footer {
     padding: 40px 24px;
   }
 }
+
+/* ===== BRAND ACCENTS (Navy Blue + Yellow) – added without altering existing styles ===== */
+/* Navy blue hover effect on text links */
+.text-link:hover {
+  color: #0b1a2e !important;  /* navy blue on hover (overrides previous black) */
+  text-shadow: 0 0 1px rgba(212, 175, 55, 0.3);
+}
+
+/* Yellow underline / accent on active nav links and section titles */
+.nav-links a.active::after,
+.section-title:after {
+  background: #D4AF37 !important;  /* gold / yellow */
+  height: 3px;
+}
+
+/* Yellow border on service cards and testimonial cards on hover */
+.service-item:hover,
+.testimonial-card:hover {
+  border-color: #D4AF37 !important;
+  box-shadow: 0 0 0 1px #D4AF37, 0 12px 24px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+/* Yellow accent on CTA button hover */
+.cta-banner .text-link:hover {
+  color: #D4AF37 !important;
+}
+
+/* Navy blue background for footer headings */
+.footer-col h4 {
+  color: #0b1a2e;  /* navy blue instead of blue */
+}
+
+/* Yellow number in talent pool */
+.talent-pool-number {
+  color: #D4AF37 !important;  /* gold */
+}
